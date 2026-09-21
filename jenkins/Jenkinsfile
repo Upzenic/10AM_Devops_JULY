@@ -9,5 +9,13 @@ pipeline{
         '''
       }
     }
+
+    stage('deploy'){
+      steps{
+        sh '''
+            echo "App deployed"
+        '''
+      }
+    }
   }
 }

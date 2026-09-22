@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Installing Docker"
+echo "Installing Jenkins"

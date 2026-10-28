@@ -1,5 +1,7 @@
 pipeline{
-  agent any
+  agent any{
+    label 'EC2_Node1'
+  }
 
   stages{
     stage('build'){

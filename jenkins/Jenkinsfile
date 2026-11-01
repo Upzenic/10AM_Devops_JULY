@@ -1,22 +1,12 @@
 pipeline{
-  agent any{
-    label 'EC2_Node1'
-  }
-
-  stages{
-    stage('build'){
-      steps{
-        sh '''
-        echo "Build Stage is successful"
-        '''
-      }
+    agent any
+    stages{
+        stage('stage1'){
+            steps{
+                sh '''
+                    echo "Stage1 is completed"
+                '''
+            }
+        }
     }
-    stage('deploy'){
-      steps{
-        sh '''
-          echo "App deployed"
-          '''
-      }
-    }      
-  }
-  }
+}
